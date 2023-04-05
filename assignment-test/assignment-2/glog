@@ -1,3 +1,0 @@
-#!/bin/bash
-
-git log --graph --all --pretty=format:'%C(auto)%h%d (%ci) %ce %s'

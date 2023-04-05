@@ -1,0 +1,40 @@
+* 628403e (HEAD -> main, origin/main, origin/HEAD) (2022-08-29 19:32:31 +0000) jappavoo@bu.edu fix fixed typeos in comments
+* 45ffb9c (2022-08-29 19:29:16 +0000) jappavoo@bu.edu added exit status optimization
+* fc4540d (2022-08-29 13:27:59 -0400) jappavoo@bu.edu fixed bug in file name waldo instances counting
+* f8678ff (2022-08-29 11:37:07 -0400) jappavoo@bu.edu adding support for file name waldos
+* aab0bf6 (2022-08-28 00:49:35 +0000) jappavoo@bu.edu 
+* 80421f7 (2022-08-28 00:47:51 +0000) jappavoo@bu.edu 
+* 83bc6f5 (2022-08-27 23:58:59 +0000) jappavoo@bu.edu 
+* 1b42b16 (2022-08-27 20:30:34 +0000) jappavoo@bu.edu 
+* e4da6df (2022-08-27 20:08:52 +0000) jappavoo@bu.edu 
+* 65e94ad (2022-08-27 20:00:11 +0000) jappavoo@bu.edu 
+* 3e641e2 (2022-08-27 18:53:42 +0000) jappavoo@bu.edu 
+* 85950bb (2022-08-27 18:25:28 +0000) jappavoo@bu.edu 
+* bd1b791 (2022-08-27 15:49:45 +0000) jappavoo@bu.edu 
+* a09c64f (2022-08-27 11:28:52 -0400) jappavoo@bu.edu 
+* fb5e753 (2022-08-25 21:12:26 +0000) jappavoo@bu.edu 
+* f02e8d8 (2022-08-25 11:19:33 +0000) jappavoo@bu.edu 
+* 870d546 (2022-08-25 02:46:18 +0000) jappavoo@bu.edu 
+* ca51fcd (2022-08-25 02:14:43 +0000) jappavoo@bu.edu adding support for file line waldos
+* b56771a (2022-08-25 01:07:12 +0000) jappavoo@bu.edu 
+* 66530ff (2022-08-25 01:00:40 +0000) jappavoo@bu.edu 
+* dcdf6de (2022-08-24 03:40:09 +0000) jappavoo@bu.edu 
+* ade3922 (2022-08-24 03:35:16 +0000) jappavoo@bu.edu 
+* 99861eb (2022-08-24 03:34:31 +0000) jappavoo@bu.edu 
+* 55268f8 (2022-08-23 22:56:00 +0000) jappavoo@bu.edu 
+* bab09dc (2022-08-23 16:22:04 +0000) jappavoo@bu.edu 
+* 94aea23 (2022-08-19 22:22:55 +0000) jappavoo@bu.edu 
+* 95ad169 (2022-04-26 23:19:00 +0000) jappavoo@bu.edu 
+* b883ad8 (2022-04-25 21:52:56 +0000) jappavoo@bu.edu 
+* e5c28b8 (2022-04-25 21:51:43 +0000) jappavoo@bu.edu 
+* d48116a (2022-04-25 19:54:39 +0000) jappavoo@bu.edu 
+* c6625cc (2022-03-22 14:49:00 +0000) jappavoo@bu.edu adding support for standard error waldos
+* d5a3125 (2022-03-22 04:29:54 +0000) jappavoo@bu.edu 
+* 8fa61f7 (2022-03-22 04:28:54 +0000) jappavoo@bu.edu 
+* 7b4f471 (2022-03-19 14:06:26 +0000) jappavoo@bu.edu 
+* cd03a24 (2022-03-19 12:59:19 +0000) jappavoo@bu.edu 
+* b05a42d (2022-03-19 08:44:39 +0000) jappavoo@bu.edu 
+* cfe35c2 (2022-03-16 18:15:26 +0000) jappavoo@bu.edu 
+* 49126d2 (2022-03-14 14:40:52 +0000) jappavoo@bu.edu adding support for standard output waldos
+* b2d087a (2022-03-11 14:27:21 -0500) jappavoo@bu.edu 
+* 9ca6d75 (2022-03-04 22:19:53 +0000) jappavoo@bu.edu 
