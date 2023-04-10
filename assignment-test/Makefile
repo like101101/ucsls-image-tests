@@ -1,5 +1,5 @@
 BUILT_REG := quay.io/
-BUILT_REPO := rh_ee_keli/ucsls:
+BUILT_REPO := ucsls/ucsls:
 BUILT_TAG := stable-burosa-devS23 
 BUILT_IMAGE := ${BUILT_REG}${BUILT_REPO}${BUILT_TAG}
 
@@ -20,14 +20,29 @@ build:
         $(MAKE) -C $$dir; \
     done
 
-image-test: REPO = $(BUILT_REPO)
-image-test: REG = $(BUILT_REG)
-image-test: TAG = $(BUILT_TAG)
-image-test: MOUNT = $(CWD):$(CONTAINER_DIR)
-image-test: build pull
+ibuild: REPO = $(BUILT_REPO)
+ibuild: REG = $(BUILT_REG)
+ibuild: TAG = $(BUILT_TAG)
+ibuild: MOUNT = $(CWD):$(CONTAINER_DIR)
+ibuild: pull
+	docker run -it -u 0 -v $(MOUNT) $(REG)$(REPO)$(TAG) make build
+
+
+itest: REPO = $(BUILT_REPO)
+itest: REG = $(BUILT_REG)
+itest: TAG = $(BUILT_TAG)
+itest: MOUNT = $(CWD):$(CONTAINER_DIR)
+itest: pull
 	docker run -it -u 0 -v $(MOUNT) $(REG)$(REPO)$(TAG) ./testassignments.sh
 
-local-test: build
+run: REPO = $(BUILT_REPO)
+run: REG = $(BUILT_REG)
+run: TAG = $(BUILT_TAG)
+run: MOUNT = $(CWD):$(CONTAINER_DIR)
+run:
+	docker run --privileged -it --rm -u 0 -v $(MOUNT) $(REG)$(REPO)$(TAG) /bin/bash
+
+test: build
 	./testassignments.sh
 
 clean: 
