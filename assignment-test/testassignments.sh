@@ -26,7 +26,7 @@ for PS_DIR in PS*; do
     echo "  ---- Testing ${PS_DIR} ----"
 
     # Ensure that the autograder scripts are executable
-    chmod +x $PS_DIR/run_autograder
+    chmod +x $PS_DIR/test.sh
 
     # copying the autograder scripts to the write place
     cp -r $PS_DIR/* $TESTING_LOC
@@ -35,7 +35,6 @@ for PS_DIR in PS*; do
 
     # Run the autograder scripts
     cd ${TESTING_LOC}
-    make
     ./run_autograder > output.log 2>&1
     score=$(python read_results.py)
 

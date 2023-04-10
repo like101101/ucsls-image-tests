@@ -1,6 +1,6 @@
 BUILT_REG := quay.io/
-BUILT_REPO := ucsls/ucsls:
-BUILT_TAG := stable-burosa-devS23 
+BUILT_REPO := rh_ee_keli/ucsls:
+BUILT_TAG := test-mof-burosa-devS23 
 BUILT_IMAGE := ${BUILT_REG}${BUILT_REPO}${BUILT_TAG}
 
 ASSIGNMENT_BUILT_DIRS := PS1B PS4B
@@ -32,7 +32,7 @@ itest: REPO = $(BUILT_REPO)
 itest: REG = $(BUILT_REG)
 itest: TAG = $(BUILT_TAG)
 itest: MOUNT = $(CWD):$(CONTAINER_DIR)
-itest: pull
+itest: pull ibuild
 	docker run -it -u 0 -v $(MOUNT) $(REG)$(REPO)$(TAG) ./testassignments.sh
 
 run: REPO = $(BUILT_REPO)
@@ -49,5 +49,6 @@ clean:
 	@for dir in $(ASSIGNMENT_BUILT_DIRS); do \
         $(MAKE) -C $$dir clean; \
     done
+	rm -rf .bash_history
 
 
