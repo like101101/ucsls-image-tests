@@ -35,7 +35,7 @@ for PS_DIR in PS*; do
 
     # Run the autograder scripts
     cd ${TESTING_LOC}
-    ./run_autograder > output.log 2>&1
+    ./test.sh > output.log 2>&1
     score=$(python read_results.py)
 
     # Check the results
@@ -49,7 +49,7 @@ for PS_DIR in PS*; do
     # Clean Up
     rm -f output.log
     rm -rf ${TESTING_LOC}/*
-    cd ~
+    cd ..
 
 done
 

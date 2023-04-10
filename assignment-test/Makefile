@@ -43,12 +43,12 @@ run:
 	docker run --privileged -it --rm -u 0 -v $(MOUNT) $(REG)$(REPO)$(TAG) /bin/bash
 
 test: build
-	./testassignments.sh
+	./testassignments.sh 1
 
 clean: 
 	@for dir in $(ASSIGNMENT_BUILT_DIRS); do \
         $(MAKE) -C $$dir clean; \
     done
-	rm -rf .bash_history
+	rm -rf .bash_history tmp
 
 
